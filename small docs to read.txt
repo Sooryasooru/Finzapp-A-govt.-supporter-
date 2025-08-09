@@ -1,0 +1,33 @@
+
+Government Scheme Recommendation System - Short Documentation
+---------------------------------------------------------------
+
+Purpose:
+Helps users find relevant government schemes using semantic search and AI-powered query matching.
+
+Steps:
+1. Load Data – Upload unique_govt_schemes.csv
+2. Prepare Text – Combine important columns into one field
+3. Create Embeddings – Use all-MiniLM-L6-v2 from Sentence Transformers
+4. Build FAISS Index – Store vectors for fast search
+5. Search & Retrieve – Find top-k matching schemes
+6. Format Output – Display scheme details and link
+7. Interface – Output shown via console or Streamlit app
+
+Tech Used:
+- FAISS (Search)
+- Sentence Transformers (Embeddings)
+- FLAN-T5 (Language model)
+- Pandas (Data handling)
+- Streamlit (UI)
+
+Example Query:
+"I'm a student with low income. Any scholarship?"
+
+Example Output:
+- Scheme Name
+- Target Group
+- Support Type
+- Eligibility
+- State/National
+- Link
